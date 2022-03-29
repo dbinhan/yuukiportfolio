@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+      integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <nav>
+          <ul>
+            <li><a href="#" style="font-size: 17px; font-weight: bold; cursor:context-menu;">home</a></li>
+            <li><a href="portfolio.html" class="unspe ">portfolio </a></li>
+            <!-- <li><a href="" class="unspe ">service</a></li> -->
+            <li> <button class="unspe open-modal-btn">Contact</button></li>
+          </ul>
+        </nav>
+      </header>
+      <div class="modal hide">
+        <div class="modal__inner">
+          <div class="modal__header">
+            <h1 style="color: white;">Contact</h1>
+            <i class="fas fa-times"></i>
+          </div>
+          <div class="modal__body">
+            <!-- <h2>Modal</h2> -->
+            <p style="color:#11ff99">SDT: 0386795480</p>
+            <p style="color:#11ff99" >Email: <a style="color: #11ff99;"href="mailto:binhandoan9@gmail.com">binhandoan9@gmail.com</a></p>
+          </div>
+          <div class="modal__footer">
+            <button>Close</button>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <section class="main__content">
+          <div class="text">
+            <h1 style="text-align: left;">I am <span> Yuuki </span></h1>
+            <h3 style="text-align: left; color:whitesmoke">I am a fullstack-developer</h3>
+            <!-- <h1>I am<span>designer</span></h1> -->
+            <!-- <div class="twelve">
+      <div class="elong">
+        <div class="second">
+          <a href="#">Click</a>
+        </div>
+        <div class="first">
+          <a class="secondary" href="#">Style 12</a>
+        </div>
+      </div>
+    </div> -->
+    <!-- <a href="#" class="btn">Search</a> -->
+    <div class="button-border"><button onclick="document.location='portfolio.html'" class="button">Search</button></div>
+          </div>
+        </section>
+        <section class="mid__content">
+          <!-- <div class="first-box">
+            <h2>Binh An</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Non
+              molestias, corporis inventore distinctio vel libero ex dicta
+              ratione quaerat nostrum! Quibusdam, laborum quod ea quos delectus
+              ex amet itaque porro?
+            </p>
+            <a href="#" class="btn">Read more</a>
+          </div> -->
+          <div class="header-wrapper">
+            <h1 style=" cursor:context-menu; background: linear-gradient(to right, #4364f7, #11ff99);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;">Your smile can change your life</h1>
+            
+            <h2 class="content__name">Binh An</h2>
+            <div class="extra">
+              <ul class="decor">
+                <li>C++</li>
+                <li>Python</li>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JAVASCRIPT</li>
+              </ul>
+            </div>
+            <b class="solid-line"></b>
+            <img src="./Image/10.png" alt="">
+            <p class="more-lines" style="text-align: center;">&nbsp; coder <br> designer <br>fullstack-developer </p>
+          </div>
+          <div class="second-box">
+            <div class="card__social">
+              <a href="https://github.com/dbinhan"
+                ><i class="fa-brands fa-github"></i
+              ></a>
+              <a href="https://www.facebook.com/profile.php?id=100052328408514"
+                ><i class="fa-brands fa-facebook"></i
+              ></a>
+              <a href="https://tmath.vn/user/doanbinhan212004"
+                ><i class="fa-solid fa-graduation-cap"></i
+              ></a>
+            </div>
+            
+          </div>
+        </section>
+      <!-- </div> -->
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>

@@ -1,0 +1,207 @@
+@import url("https://fonts.googleapis.com/css2?family=Caveat:wght@400;600&family=Hurricane&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Satisfy&display=swap");
+
+:root {
+  --main: pink;
+}
+body {
+  height: 100vh;
+  background: linear-gradient(
+      16deg,
+      rgba(0, 255, 255, 0.6),
+      rgba(0, 162, 255, 0.6),
+      rgba(0, 110, 255, 0.6),
+      rgba(76, 0, 255, 0.6)
+    ),
+    url(https://images.unsplash.com/photo-1638913660695-b490171d17c9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDF8MHxzZWFyY2h8MXx8Y29pbnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60);
+  background-size: cover;
+}
+.box1 {
+  float: left;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 20px;
+}
+.image {
+  width: 200px;
+  height: 200px;
+  border-radius: 100rem;
+  /* border: 4px solid var(--main); */
+  float: left;
+  shape-outside: circle(50%);
+  /* margin-right: 40px; */
+  clip-path: circle(50%);
+}
+.round {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  border-radius: 100rem;
+  animation: round 2s linear infinite;
+}
+@keyframes round {
+  0% {
+    transform: rotate(0deg);
+    /* box-shadow: 10px 10px 3px aqua; */
+    border: 4px solid rgb(0, 255, 76);
+  }
+  50% {
+    transform: rotate(180deg);
+    border: 4px solid aqua;
+  }
+  100% {
+    transform: rotate(360deg);
+    border: 4px solid rgb(255, 0, 234);
+  }
+}
+.left-to-right {
+  transform: translateX(-150%);
+}
+
+.left-to-right.start {
+  transition: 1.7s ease-in-out;
+  transform: translateX(0);
+}
+.right-to-left {
+  transform: translateX(150%);
+}
+
+.right-to-left.start {
+  transition: 0.7s ease-in-out;
+  transform: translateX(0);
+}
+.zoom {
+  transform: scale(0);
+}
+
+.zoom.start {
+  transition: 1.5s ease-in-out;
+  transform: unset;
+}
+h2,
+span,
+li {
+  color: white;
+  font-size: 2rem;
+  cursor: context-menu;
+  text-shadow: 2px 2px violet;
+  font-family: "Poppins", sans-serif;
+}
+
+@keyframes example {
+  0% {
+    color: rgb(30, 175, 90);
+  }
+  17% {
+    color: rgb(0, 255, 255);
+  }
+  33% {
+    color: rgb(0, 60, 255);
+  }
+  50% {
+    color: rgb(162, 0, 255);
+  }
+  67% {
+    color: rgb(204, 0, 255);
+  }
+  84% {
+    color: rgb(255, 0, 191);
+  }
+  100% {
+    color: rgb(255, 0, 43);
+  }
+}
+#container {
+  width: 175px;
+  height: 175px;
+  /* margin: auto; */
+  /* margin-left: 4rem; */
+  perspective: 880px;
+  /* margin-top: 1rem; */
+  /* float: left; */
+  shape-outside: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+  /* margin-right: 100px; */
+  /* padding-left: 1rem; */
+  /* position: absolute; */
+  /* left: 70%; */
+}
+.cover {
+  width: 200px;
+  height: 200px;
+  animation: flip-animate 20s linear infinite;
+  transform-style: preserve-3d;
+}
+#container .cover div {
+  width: 200px;
+  height: 200px;
+  position: absolute;
+}
+#container .cover div img {
+  width: 200px;
+  height: 200px;
+}
+#container .cover .front {
+  transform: translateZ(100px);
+}
+#container .cover .back {
+  transform: rotateY(180deg) translateZ(100px);
+}
+#container .cover .left {
+  transform: rotateY(-90deg) translateX(-100px);
+  transform-origin: left;
+}
+#container .cover .right {
+  transform: rotateY(90deg) translateX(100px);
+  transform-origin: right;
+}
+#container .cover .top {
+  transform: rotateX(-90deg) translateY(-100px);
+  transform-origin: top;
+}
+#container .cover .bottom {
+  transform: rotateX(90deg) translateY(100px);
+  transform-origin: bottom;
+}
+@keyframes flip-animate {
+  0% {
+    transform: rotateY(0);
+  }
+  100% {
+    transform: rotateY(360deg);
+  }
+}
+.in1 {
+  /* float: left;
+	margin-right: 40px; */
+  /* position: relative; */
+}
+.left-to-right2 {
+  transform: translateX(-150%);
+}
+
+.left-to-right2.start {
+  transition: 1.7s ease-in-out;
+  transform: translateX(50vw);
+}
+.in2 {
+  float: left;
+}
+.name {
+  animation-name: example;
+  animation-timing-function: linear;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  margin-bottom: 0px !important;
+}
+.makeup {
+  color: white;
+  font-size: 60px;
+  position: fixed;
+  right: 4%;
+  bottom: 10%;
+  transition: 1.5s;
+}
+.makeup:hover {
+  color: #11ff99;
+  transform: scale(1.2);
+}
